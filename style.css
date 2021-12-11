@@ -1,0 +1,23 @@
+body{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQirbHzzQkC8Ymc0ySl3tDztHdEAhomtxNJuw&usqp=CAU");
+    background-position: center;
+    background-size: cover;
+    font-family:cursive;
+    }
+span
+{
+  font-size: 50px;
+}
+label{
+    border-radius: 5px;
+    font-size:22px;
+}
+#Heading
+{
+    color:cornflowerblue;
+    font-size: 44px;
+}
+#update_emoji
+{
+  font-size: 50px;
+}

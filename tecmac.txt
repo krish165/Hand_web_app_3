@@ -1,0 +1,2 @@
+HAND GESTURE WEB APP - 1
+https://teachablemachine.withgoogle.com/models/alyOxWV87/model.jason

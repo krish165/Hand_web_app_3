@@ -1,0 +1,72 @@
+<html>
+<head>
+    <title>Hand web app</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <center>
+    <h1 id="Heading">Show some hand guestures like</h1>
+    
+    <span>&#9754;</span>
+    <span>&#9755;</span>
+    <span>&#9756;</span>
+    <span>&#9757;</span>
+    <span>&#9758;</span>
+    <span>&#9994;</span>
+    <br>
+    <hr>
+    <label>The model is trained for:<br>
+        <span>&#9757;</span>
+        <span>-Amazing,</span>
+        <span>&#9994;</span>
+        <span>-Best,</span>
+        <span>&#9995;</span>
+        <span>-Hi,</span>
+        <span>&#9996;</span>
+        <span>-Victory,</span>
+        <span>&#128076;</span>
+        <span>-Success.</span>
+    </label>
+   <center>
+
+    <div class="col-md-4 col-sm-12 col-xs-12">
+  
+        <label style="background-color: cornsilk; color: crimson; border-radius: 5px;">Camera:-</label>
+        <div id="camera"></div>
+        <br><br>
+         <button onclick="capture()" class="btn btn-info">Capture</button>    
+     </div>
+     
+ 
+     
+     <div class="col-md-4 col-sm-12 col-xs-12">
+       <label style="background-color: cornsilk; color: crimson;">Prediction:</label>
+       <p class="emotion_name" id="result_emotion_name"></p>
+       <p class="emoji" id="update_emoji"></p>
+     </div>
+ 
+ 
+     <div class="col-md-4 col-sm-12 col-xs-12">
+ 
+           <label style="background-color: cornsilk; color: crimson;">Snapshot - </label>
+ 
+         <div id="result"></div>
+ 
+         <br><br>
+        
+         <button class="btn btn-danger" onclick="predict()">Predict</button>
+       </div>
+ 
+ 
+<script src="main.js"></script>
+</body>
+
+</html>
